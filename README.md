@@ -13,12 +13,10 @@ npm install --save reactautoplay
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
+import VideoThumbnail from "reactautoplay";
 
-import MyComponent from 'reactautoplay'
-
-class Example extends Component {
-  render () {
+const App = () => {
     return (
         <VideoThumbnail
           title='The Bachelor Premieres January 6'
@@ -30,7 +28,6 @@ class Example extends Component {
           width={350} 
           classname="customClassName" /> 
     )
-  }
 }
 ```
 
