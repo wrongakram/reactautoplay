@@ -26,7 +26,7 @@ const App = () => {
           message='1.2M Watching Now 🔥🔥'
           muted={false}
           width={350} 
-          classname="customClassName" /> 
+          classname='customClassName' /> 
     )
 }
 ```
