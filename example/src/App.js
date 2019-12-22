@@ -6,23 +6,22 @@ const App = () => {
   return (
     <div className="example">
       <div className="flex">
-        <VideoThumbnail /> 
-
+        <VideoThumbnail  classname='customClassName' /> 
         <VideoThumbnail
           title='The Bachelor Premieres January 6'
           preview='https://media1.giphy.com/media/llsb2HU9sKfK57pcnf/giphy480p.mp4'
           badge='Premiere'
           badgeBG='#EF798A'
           message='1.2M Watching Now 🔥🔥'
-          muted={true}
+          muted={false}
           width={350} 
-          classname="customClassName" /> 
-          
-          <VideoThumbnail 
+          classname='customClassName' /> 
+          <VideoThumbnail  
             title='Boogie With A Bear | Planet Earth II'
             preview='https://media1.giphy.com/media/mFvxw25Jxy4TsHfjQE/giphy480p.mp4'
             badge='Live'
-            message='24k Watching Now'  
+            message='24k Watching Now'
+            classname='customClassName'
             /> 
       </div>
     </div>

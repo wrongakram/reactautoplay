@@ -4,24 +4,27 @@
   "description": "Auto play video when you hover on the thumbnail. ",
   "author": "wrongakram",
   "license": "MIT",
-  "repository": "wrongakram/reactautoplay",
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/wrongakram/reactautoplay.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
-  },
+  }, 
   "scripts": {
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "peerDependencies": {
+  "peerDependencies": { 
     "prop-types": "^15.5.4",
     "react": "16.12.0",
     "react-dom": "16.12.0"

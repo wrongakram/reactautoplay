@@ -13,16 +13,21 @@ npm install --save reactautoplay
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
+import VideoThumbnail from "reactautoplay";
 
-import MyComponent from 'reactautoplay'
-
-class Example extends Component {
-  render () {
+const App = () => {
     return (
-      <MyComponent />
+        <VideoThumbnail
+          title='The Bachelor Premieres January 6'
+          preview='https://media1.giphy.com/media/llsb2HU9sKfK57pcnf/giphy480p.mp4'
+          badge='Premiere'
+          badgeBG='#EF798A'
+          message='1.2M Watching Now 🔥🔥'
+          muted={false}
+          width={350} 
+          classname="customClassName" /> 
     )
-  }
 }
 ```
 
